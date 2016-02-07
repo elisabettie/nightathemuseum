@@ -1,10 +1,13 @@
 # -*-coding: utf-8 -*-
+# Utf-8 gör det möjligt för mig att använda svenska bokstäver utan att det krashar något.
+
+
 
 # Hej! Welcome to "Night at the museum"
-# Bli inte förkräckt av alla kodrader, jag har lagt in kommentarer som förklarar hur programmet fungerar.
-# Testa gärna att öppna programmet en gång, då kan det vara lättare att följa vad som händer i koden.
+# Bli inte förkräckt av alla kodrader, jag har lagt in kommentarer som förklarar hur programmet/spelet fungerar.
+# Testa gärna spelet en gång, det kan underlätta att följa vad som händer i koden.
 
-# Det första programmet gör är att rensa din historik i terminalen, 
+# Det första spelet gör är att rensa din historik i terminalen, 
 # så att du startar spelet utan att bli distraherad från en massa text.
 
 print (chr(27) + "[2J")
