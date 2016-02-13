@@ -10,6 +10,10 @@
 # Det första spelet gör är att rensa din historik i terminalen, 
 # så att du startar spelet utan att bli distraherad från en massa text.
 
+# För att spelet ska kännas mer som en dialog, har vi importerat tid, 
+# så att vi kan ha några sekunders väntetid tills nästa mening skrivs ut.
+import time
+
 print (chr(27) + "[2J")
 print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print ("~~~~~~~~~~~~~~~~~~~~~~~Night at the museum~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -18,8 +22,7 @@ print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # Det första vi möter är en dialog mellan dig och den mystiska personen som har ett uppdrag till dig.
 print ("Well hello, princess. How nice of you to finally show up!")
 
-# För att det ska kännas mer som en dialog, har vi lagt in 10 sekunders väntetid tills nästa mening skrivs ut.
-import time
+# Här ser vi att det kommer dröja 2 sek innan nästa print visas.
 time.sleep(2)
 
 print ("I took the liberty of ordering a beer for you. Wouldn't be surpriced if its flat now though.")
@@ -61,22 +64,18 @@ if answer.lower() == "yes":
 else:
 	print person + (", why do you get paid? Let's go through the job again -")
 
-	import time
 	time.sleep(2)
 
 	print (" The Bloodsaphire is an artifact currently at the National Gem Museum.")
 
-	import time
 	time.sleep(2)
 	
 	print (" I want you to hand it to me.")
 
-	import time
 	time.sleep(2)
 	
 	print (" I will pay you for your work of course. If you succeed.")
 
-	import time
 	time.sleep(2)
 print
 
@@ -108,13 +107,11 @@ print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if answer == "1":
 	print "You seem to be sure about yourself. I hope that won't bite you in the end. The stranger replies."
 
-	import time
 	time.sleep(4)
 
 elif answer == "2":
 	print "Well, I guess you're right. I can't give you the money right now, but I have a name. Kaylei Schassy. She works at the local electric shop. Tell her that you want to change your light. She might be able to help you out."
 
-	import time
 	time.sleep(4)
 
 else:
