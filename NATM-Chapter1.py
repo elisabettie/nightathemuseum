@@ -90,7 +90,7 @@ print
 
 # Värdet till ordet/variabeln "options" består i detta fall av två svarsalternativ.
 
-options = ["Don't you worry old man. Consider the job done.","Wait a minuite! Stealing from an museum?! Hell no, I'm not doing that without a pre-payment. "]
+options = ["Don't you worry old man. Consider the job done.","Wait a minuite! Stealing from an museum?! Hell no, I'm not doing that!"]
 
 # --- var händer här ----
 
@@ -105,32 +105,37 @@ print
 print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 if answer == "1":
-	print "You seem to be sure about yourself. I hope that won't bite you in the end. The stranger replies."
+	print "Good. I can't give you the money right now, but I have a name. Kaylei Schassy. She works at the local electric shop. Tell her that you want to change your light. She will be able to help you out."
 
 	time.sleep(4)
 
 elif answer == "2":
-	print "Well, I guess you're right. I can't give you the money right now, but I have a name. Kaylei Schassy. She works at the local electric shop. Tell her that you want to change your light. She might be able to help you out."
+	print "You are a disaster! I never want to see you again!"
+	print
+
+	print ("You have failed the mission. But then again, maybe that's a good thing.")
+	print
 
 	time.sleep(4)
 
 else:
-	print "You know, I'm putting a lot of trust in you right now. Don't screw it up!"
+	print "You know, I'm putting a lot of trust in you right now. Don't screw it up! Talk to Kaylei Schassy. She works at the local electric shop. Tell her that you want to change your light. She will be able to help you out."
 
 # Kapitell 1 avslutas med att karaktären lämnar den mystiska peronen.
-print
 
-print ("On the way out of the bar you notice a poster on the wall.")
-print
+	print
 
-print ("     The poster says:")
-print ("     Young and old! Big and Small!")
-print ("     Don't miss the grand opening of the amazing National Gem Museum exhibition - chrystals beyond imagination, tomorrow at 8 pm.")
+	print ("On the way out of the bar you notice a poster on the wall.")
+	print
 
-print
-print ("This means the job needs to be done tonight..")
-print
+	print ("     The poster says:")
+	print ("     Young and old! Big and Small!")
+	print ("     Don't miss the grand opening of the amazing National Gem Museum exhibition - chrystals beyond imagination, tomorrow at 8 pm.")
 
-print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print ("~~~~~~~~~~~~~~~~~~~~~~~~~End of chapter 1~~~~~~~~~~~~~~~~~~~~~~~~~")
-print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print
+	print ("This means the job needs to be done tonight..")
+	print
+
+	print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print ("~~~~~~~~~~~~~~~~~~~~~~~~~End of chapter 1~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
