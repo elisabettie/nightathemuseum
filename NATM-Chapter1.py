@@ -114,7 +114,6 @@ elif answer == "2":
 	print
 
 	print ("You have failed the mission. But then again, maybe that's a good thing.")
-	print
 
 	time.sleep(4)
 
