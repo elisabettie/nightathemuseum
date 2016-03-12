@@ -13,6 +13,7 @@
 # För att spelet ska kännas mer som en dialog, har vi importerat tid, 
 # så att vi kan ha några sekunders väntetid tills nästa mening skrivs ut.
 import time
+import sys
 
 print (chr(27) + "[2J")
 print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -25,7 +26,7 @@ print ("Well hello, princess. How nice of you to finally show up!")
 # Här ser vi att det kommer dröja 2 sek innan nästa print visas.
 time.sleep(2)
 
-print ("I took the liberty of ordering a beer for you. Wouldn't be surpriced if its flat now though.")
+print ("I took the liberty of ordering a beer for you. Wouldn't be surprised if its flat now though.")
 
 # Den mystiska personen frågar vad du heter
 # person = raw_input indikerar att inkommande text (svaret som spelaren ger), 
@@ -34,7 +35,7 @@ print ("I took the liberty of ordering a beer for you. Wouldn't be surpriced if 
 print
 
 person = raw_input("What's your name? ")
-print ("Well, that's not your fault. ")
+print ("Well, that's not your fault, " + person)
 
 print
 
@@ -62,7 +63,7 @@ if answer.lower() == "yes":
 # Här ser vi att namnet som spelaren angett i början kommer att skrivas ut, innan dialogen fortsätter.
 
 else:
-	print person + (", why do you get paid? Let's go through the job again -")
+	print (person + ", what do I pay you for? Let's go through the job again -")
 
 	time.sleep(2)
 
@@ -90,12 +91,11 @@ print
 
 # Värdet till ordet/variabeln "options" består i detta fall av två svarsalternativ.
 
-options = ["Don't you worry old man. Consider the job done.","Wait a minuite! Stealing from an museum?! Hell no, I'm not doing that!"]
+options = ["Don't you worry old man. Consider the job done.","Wait a minuite! Stealing from a museum?! Hell no, I'm not doing that!"]
 
-# --- var händer här ----
 
-for i, val in enumerate(options):
-	print i+1, '::', val 
+for position, option in enumerate(options):
+	print position+1, '::', option
 
 print
 
@@ -115,7 +115,8 @@ elif answer == "2":
 
 	print ("You have failed the mission. But then again, maybe that's a good thing.")
 
-	time.sleep(4)
+	time.sleep(2)
+	sys.exit()
 
 else:
 	print "You know, I'm putting a lot of trust in you right now. Don't screw it up! Talk to Kaylei Schassy. She works at the local electric shop. Tell her that you want to change your light. She will be able to help you out."
@@ -129,7 +130,7 @@ else:
 
 	print ("     The poster says:")
 	print ("     Young and old! Big and Small!")
-	print ("     Don't miss the grand opening of the amazing National Gem Museum exhibition - chrystals beyond imagination, tomorrow at 8 pm.")
+	print ("     Don't miss the grand opening of the amazing National Gem Museum exhibition - crystals beyond imagination, tomorrow at 8 pm.")
 
 	print
 	print ("This means the job needs to be done tonight..")
